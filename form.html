@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+    <head>
+        <!-- Metadados -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+
+        <!-- Título da página (aparece na aba) -->
+        <title>Cadastro</title>
+        
+        <script src="popup.js"></script>
+    </head>
+
+    <body>  
+
+        <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+        <div>
+            <h1 id="titulo">Cadastro de Email</h1>
+            <p id="subtitulo">Complete as informações abaixo</p>
+            <br>
+        </div>
+
+        <!-- Início do formulário -->
+        <form>
+
+            <fieldset class="grupo">
+                <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" placeholder= "Digite seu Nome" required>
+                </div>
+
+                <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder= "Digite seu Sobrenome" required>
+                </div>
+            </fieldset> 
+
+            <fieldset class="grupo">
+                <!-- Campo de idade com-->
+                <div class="campo">
+                    <label for="idade"><strong>Idade</strong></label>
+                    <input type="number" name="idade" id="idade" placeholder= "Digite sua Idade" required>
+                </div>
+
+                <!-- Campo de telefone com-->
+                <div class="campo">
+                    <label for="telefone"><strong>Telefone</strong></label>
+                    <input type="text" name="telefone" id="telefone" placeholder= "Digite seu Telefone" required>
+                </div>
+
+            </fieldset> 
+
+            <!-- Campo de email com-->
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" placeholder= "Digite seu E-mail" required>
+            </div>
+
+            <fieldset class="grupo">
+                <!-- Campo de tecnologias para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+                <div id="check">
+                    <label><strong>Estudante da 42? :</strong></label>
+                    <input type="checkbox" id="estudante" name="estudante" value="check">
+                </div>
+            </fieldset>
+
+            <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
+            <div class="campo">
+                <label>
+                    <input type="radio" name="devweb" id="masculino" value="masculino" checked> Masculino
+                    <input type="radio" name="devweb" id="feminino" value="feminino"> Feminino
+                    <input type="radio" name="devweb" id="outro" value="outro"> Outro
+                </label>
+            </div>
+            
+            <!-- Botão para enviar o formulário -->
+            <button class="botao" type="submit" onsubmit="" onclick="displayFormContents()">Concluído</button>   
+
+        </form>
+
+    </body>
+
+</html>
+
+
+
+
+ 
