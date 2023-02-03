@@ -1,27 +1,27 @@
 function displayFormContents() {
 
-    var out = '';
-    
-    out += 'nome = ' + document.getElementById('nome').value + '\n';
-    out += 'sobrenome = '      + document.getElementById('sobrenome').value      + '\n';
-    out += 'telefone = '     + document.getElementById('telefone').value     + '\n';
-    out += 'idade = '       + document.getElementById('idade').value       + '\n';
-    out += 'Email = '     + document.getElementById('email').value     + '\n';
-    
-    out += 'Sexo = ';
-    if (document.getElementById('masculino').checked == true)
-    out += document.getElementById('masculino').value;
-    if (document.getElementById('feminino').checked == true)
-    out += document.getElementById('feminino').value;
-    if (document.getElementById('outro').checked == true)
-    out += document.getElementById('outro').value;
-    out += '\n';
-    
-    if (document.getElementById('estudante').checked == true)
-    out += 'Estudante da 42 = Sim';
-    else
-    out += 'Estudante da 42 = Não';
-    
-    alert(out);
-    
-    }
+	var out = '';
+
+	out += 'Firstname = ' + document.getElementById('firstname').value + '\n';
+	out += 'Name = '      + document.getElementById('name').value      + '\n';
+	out += 'Phone = '     + document.getElementById('phone').value     + '\n';
+	out += 'Age = '       + document.getElementById('age').value       + '\n';
+	out += 'Email = '     + document.getElementById('email').value     + '\n';
+
+	out += 'Gender = ';
+	if (document.getElementById('gender_male').checked == true)
+		out += document.getElementById('gender_male').value;
+	if (document.getElementById('gender_female').checked == true)
+		out += document.getElementById('gender_female').value;
+	if (document.getElementById('gender_other').checked == true)
+		out += document.getElementById('gender_other').value;
+	out += '\n';
+
+	if (document.getElementById('student').checked == true)
+		out += 'Student at 42 = yes';
+	else
+		out += 'Student at 42 = no';
+
+	alert(out);
+
+}
